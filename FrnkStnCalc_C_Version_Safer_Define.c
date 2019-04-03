@@ -10,7 +10,7 @@
 
 /* Declare variables */
 double Argument1, Argument3, DataResults;
-char Argument2, PrintStringHello[CharsLimit];
+char Argument2, PrintStringHello[CharsLimit] = "Hello! :)";
 
 /* Declare functions */
 void FuncResults(double DataResults);
@@ -59,12 +59,12 @@ int main(int argc, char *argv[])
 	/* Say hello if "hey" input is received as second argument */
 	else if (strncmp(heyhey, "hey", CharsLimit) == 0)
 	{
-		printf("Hello! :)\n");
+		printf("%s\n", PrintStringHello);
 	}
 	/* Print an error message if a inexistent operator is used */
 	else
 	{
-		printf("%s\n", PrintStringHello);
+		printf("Operator does not exist\n");
 	}
 	/* Exit program */
 	return 0;
