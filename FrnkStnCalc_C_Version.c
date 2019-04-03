@@ -7,8 +7,8 @@
 
 /* Declare variables */
 double Argument1, Argument3, DataResults;
-const char NumbersLimit = 50;
-char Argument2, heyhey[NumbersLimit];
+const char CharsLimit = 50;
+char Argument2, heyhey[CharsLimit];
 
 /* Declare functions */
 void FuncResults(double DataResults);
