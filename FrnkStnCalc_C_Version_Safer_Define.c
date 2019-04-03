@@ -55,7 +55,7 @@ int main(int argc, char *argv[])
 		FuncResults(Argument1 * Argument3);
 	}
 	/* Say hello if "hey" input is received as second argument */
-	else if (strcmp(heyhey, "hey") == 0)
+	else if (strncmp(heyhey, "hey", CharsLimit) == 0)
 	{
 		printf("Hello! :)\n");
 	}
