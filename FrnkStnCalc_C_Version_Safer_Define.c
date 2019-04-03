@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-/* Maximum char macro */
+/* Maximum chars macro */
 #define CharsLimit 50
 
 /* Declare variables */
