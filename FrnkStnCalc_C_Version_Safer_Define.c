@@ -7,8 +7,10 @@
 
 /* Declare variables */
 double Argument1, Argument3, DataResults;
-#define CharsLimit 50
 char Argument2;
+
+/* Maximum char macro */
+#define CharsLimit 50
 
 /* Declare functions */
 void FuncResults(double DataResults);
