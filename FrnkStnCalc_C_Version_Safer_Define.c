@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 	{
 		FuncResults(Argument1 * Argument3);
 	}
-	/* Say hello if "hey" input is received as second argument */
+	/* Say hello if "hey" input is received as second argument */ /* Compare strings using strncmp /* /* You can also use strcmp if you want to compare the full strings without a character limit (See first FrnkStnCalc ver) */
 	else if (strncmp(heyhey, "hey", CharsLimit) == 0)
 	{
 		printf("%s\n", PrintStringHello);
