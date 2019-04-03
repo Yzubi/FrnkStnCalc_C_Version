@@ -6,11 +6,21 @@
 #include <string.h>
 
 /* Maximum chars macro */
-#define CharsLimit 50
+#define CharsLimit 200
 
-/* Declare variables */
-double Argument1, Argument3, DataResults;
-char Argument2, PrintStringHello[CharsLimit] = "Hello! :)";
+/*== Declare variables ==*/
+double 
+Argument1, 
+Argument3, 
+DataResults;
+
+/* You can remove "CharsLimit" and use only a [] if you don't plan on changing the string later */
+char 
+Argument2,
+PrintStringHello[CharsLimit] = "Hello! This is a changeable string with a limit char count equivalent to the CharsLimit #define number :)",
+PrintStringHelloFixed[] = "This is a changeable string with a limit char count equivalent to this message",
+*PrintStringHelloReadOnly = "This is a read only string";
+
 
 /* Declare functions */
 void FuncResults(double DataResults);
@@ -59,7 +69,7 @@ int main(int argc, char *argv[])
 	/* Say hello if "hey" input is received as second argument */ /* Compare strings using strncmp /* /* You can also use strcmp if you want to compare the full strings without a character limit (See first FrnkStnCalc ver) */
 	else if (strncmp(heyhey, "hey", CharsLimit) == 0)
 	{
-		printf("%s\n", PrintStringHello);
+		printf("%s\n %s\n %s\n", PrintStringHello, PrintStringHelloFixed, PrintStringHelloReadOnly);
 	}
 	/* Print an error message if a inexistent operator is used */
 	else
