@@ -5,12 +5,12 @@
 #include <stdlib.h>
 #include <string.h>
 
-/* Declare variables */
-double Argument1, Argument3, DataResults;
-char Argument2;
-
 /* Maximum char macro */
 #define CharsLimit 50
+
+/* Declare variables */
+double Argument1, Argument3, DataResults;
+char Argument2, PrintStringHello[CharsLimit];
 
 /* Declare functions */
 void FuncResults(double DataResults);
@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
 	/* Print an error message if a inexistent operator is used */
 	else
 	{
-		printf("Operator does not exist\n");
+		printf("%s\n", PrintStringHello);
 	}
 	/* Exit program */
 	return 0;
