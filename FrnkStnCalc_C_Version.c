@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 
 	/* === Arguments === */
 	/* Copy second argument to "heyhey" string using Memcpy */
-	memcpy(heyhey, argv[2], 50);
+	memcpy(heyhey, argv[2], CharsLimit);
 
 	/* Convert string to float using Atoi */
 	Argument1 = atoi(argv[1]); /*Arg1*/
